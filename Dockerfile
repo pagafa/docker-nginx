@@ -12,7 +12,6 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
     ./configure \
         --with-http_ssl_module \
         --with-http_gzip_static_module \
-        --with-ngx_http_proxy_module
         --prefix=/etc/nginx \
         --http-log-path=/var/log/nginx/access.log \
         --error-log-path=/var/log/nginx/error.log \
