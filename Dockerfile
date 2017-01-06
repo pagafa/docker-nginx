@@ -1,7 +1,7 @@
-FROM alpine:3.3
+FROM alpine:3.5
 MAINTAINER Pablo Gallego Falcon "pablo@gallegofalcon.com"
 
-ENV NGINX_VERSION nginx-1.9.15
+ENV NGINX_VERSION nginx-1.11.8
 
 RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
     mkdir -p /tmp/src && \
